@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbzaig/readMeGenerator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mbzaig/readMeGenerator/issues"
+  },
+  "homepage": "https://github.com/mbzaig/readMeGenerator#readme"
 }

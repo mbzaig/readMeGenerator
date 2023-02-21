@@ -35,7 +35,7 @@ function generateLicenseBadges(license) {
 function generateLangBadges(language) {
   const badges = {
     "HTML5":
-      "[(![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white))",
+      "![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)",
     "JavaScript":
       "![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)",
     "CSS3":
@@ -66,10 +66,10 @@ ${response.description}
 To install the necessary dependencies, run the following command:
 ${response.install}
 ## Usage
-You can run this application using command 
+You can run this application using command:
 ${response.usage}
 ## Langugages
-The application uses the following programming languages: ${response.LangbadgeMarkdown}
+The application uses the following programming languages: ${response.language}
 ${LangbadgeMarkdown}
 ## License
 This application is under license of ${response.license}

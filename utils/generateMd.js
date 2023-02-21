@@ -23,7 +23,7 @@ function generateLicenseBadges(license) {
       "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)",
     "ISC License (ISC)":
       "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
-      "The MIT License":
+    "The MIT License":
       "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     "Mozilla Public License 2.0":
       "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
@@ -44,14 +44,14 @@ function generateLangBadges(language) {
       "![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)",
     "jQuery":
       "![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)",
-    
+
   };
   return badges[language];
 }
 
 function generateMarkdown(response, licenseBadgeMarkdown, LangbadgeMarkdown) {
   return `# Project Title: ${response.title}
-
+  ${licenseBadgeMarkdown}
 ## Project Description: 
 ${response.description}
 ## Table of Contents: 

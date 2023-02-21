@@ -1,16 +1,31 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const {
+    generateLicenseBadges,
+    generateLangBadges,
+    generateMarkdown,
+  } = require("./utils/generateMd");
 
 // array of questions for user
-const questions = [
+inquirer .prompt(
+    [
 
-];
+
+
+    ]
+)
+
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+.then((response)=> {
+    const LicensebadgeMarkdown = generateLicenseBadges(response.license);
+    const LangbadgeMarkdown = generateLangBadges(response.language);
+    const readMeInfo = generateMarkdown(response, LicensebadgeMarkdown, LangbadgeMarkdown);
+    const markdown = `${readMeInfo}`;
+    fs.writeFile(title + "readMe.md", markdown, (err) =>
+        err ? console.Console(err) : console.log("Read Me file generated succesfully"));
+})
 
 // function to initialize program
 function init() {
